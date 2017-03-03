@@ -56,22 +56,19 @@
     <input  id="file-data" type="file" accept="image/*" hidden>
 
     <div class="no-line">Radius Max Limit</div>
-    <input id="text-radius-limite" type="text" placeholder="10">
+    <input id="text-radius-limite" value="10" type="text" placeholder="10">
 
     <div class="no-line">Max Number of Circle <span style="font-size: 12px">[Initial]</span></div>
-    <input id="text-number-circle" type="text" placeholder="100">
+    <input id="text-number-circle" value="100" type="text" placeholder="100">
 
     <div class="no-line">Selection Mode</div>
 
     <div class="select-style">
         <select id="select-typecolor">
-            <option value="0">Color</option>
-            <option value="1" selected>GrayScale</option>
+            <option value="color">Color</option>
+            <option value="gray" selected>GrayScale</option>
         </select>
     </div>
-
-
-
 </div>
 
 <div style="width: 510px; height: 400px;  float: left; display: block; margin-left:  calc(35% - 260px)">
@@ -100,9 +97,7 @@
 <script>
 
 //blue
-image = new Image();
-image.crossOrigin = 'anonymous';
-image.src =  "images/monalisa_color.png";
+
 
 </script>
 

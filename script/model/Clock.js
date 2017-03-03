@@ -1,3 +1,5 @@
+//Clock
+//status: ok
 function Clock(){
     this.hours = 0;
     this.minutes = 0;

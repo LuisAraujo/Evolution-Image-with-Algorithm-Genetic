@@ -6,11 +6,15 @@ window.MAXCIRCLE = 0;
 window.COLORMODE = 0;
 window.LOCALFOLDER = "";
 window.stopNow = false;
+//type array
 window.imageTarget = null;
 window.view = null;
 window.verbose = false;
 window.p  = null;
 window.clock = null;
+//type image (HTML)
+window.fileTarget = new Image();
+window.fileTarget.crossOrigin = 'anonymous';
 
 //save ref of function interval for time
 var funcIntervalo;
@@ -40,6 +44,12 @@ $(window).on("load",function(){
 
     //play button of main screen
     $("#bt-play").click( function(){
+
+        $("#bt-file-data").click(function(){
+           alert("You do not change image target after process started!");
+        });
+
+
         //falg stop is false
         stopNow = false;
 
@@ -51,14 +61,14 @@ $(window).on("load",function(){
         $("#bt-pause").css("display","inline");
 
         //print image target in canvas
-        ctx.drawImage(image,0,0);
+        ctx.drawImage(fileTarget,0,0);
 
         //if is the first time of click play
         if(imageTarget == null){
 
             MAXRADIUS =  parseInt( $("#text-radius-limite").val() );
             MAXCIRCLE = parseInt( $("#text-number-circle").val() );
-            COLORMODE =  parseInt( $("#select-typecolor option:selected").val());
+            COLORMODE =  $("#select-typecolor option:selected").val();
             LOCALFOLDER = $("#text-testname").val();
 
             //get data of image
@@ -88,14 +98,9 @@ $(window).on("load",function(){
     });
 
     //geting image target
-    document.getElementById('file-data').onchange = function() {
-        readFileByLine(this, function(data){
-                window.arrLocals = [];
-                setLocals(data)},
-            function(data){
-                window.arrTrucks = [];
-                setTrucks(data)
-            });
+    document.getElementById('file-data').onchange = function(e) {
+        fileTarget.src =  URL.createObjectURL(e.target.files[0]);
+
     };
 });
 

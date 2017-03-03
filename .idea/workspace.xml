@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/script/model/Chromosomu.js" description="&#10;Chromosomu.prototype.mutate = function(){&#10;&#10;};" line="8" />
+    <bookmark url="file://$PROJECT_DIR$/script/model/Chromosomu.js" description="&#10;Chromosomu.prototype.mutate = function(){&#10;&#10;};" line="12" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f20b0805-114c-43df-9d5b-29735905628b" name="Default" comment="" />
@@ -26,10 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="0" selection-start="3496" selection-end="3496" vertical-scroll-proportion="0.5936255" vertical-offset="1321" max-vertical-offset="2074">
+            <state line="70" column="10" selection-start="2422" selection-end="2422" vertical-scroll-proportion="-4.769231" vertical-offset="1066" max-vertical-offset="1989">
               <folding />
             </state>
           </provider>
@@ -38,16 +38,18 @@
       <file leaf-file-name="Gene.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/script/model/Gene.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="282" selection-end="282" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-              <folding />
+            <state line="1" column="11" selection-start="18" selection-end="18" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stylepage.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/style/stylepage.css">
+      <file leaf-file-name="Chromosomu.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/script/model/Chromosomu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="221" column="16" selection-start="3813" selection-end="3813" vertical-scroll-proportion="0.0" vertical-offset="3471" max-vertical-offset="4250">
+            <state line="85" column="14" selection-start="2163" selection-end="2163" vertical-scroll-proportion="18.653847" vertical-offset="1930" max-vertical-offset="3009">
               <folding />
             </state>
           </provider>
@@ -56,7 +58,7 @@
       <file leaf-file-name="Main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/script/Main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="52" selection-start="1580" selection-end="1580" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="2108">
+            <state line="70" column="69" selection-start="1766" selection-end="1766" vertical-scroll-proportion="0.0" vertical-offset="666" max-vertical-offset="2193">
               <folding />
             </state>
           </provider>
@@ -65,52 +67,27 @@
       <file leaf-file-name="Clock.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/script/model/Clock.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="23" selection-start="834" selection-end="834" vertical-scroll-proportion="0.0" vertical-offset="122" max-vertical-offset="901">
-              <folding />
+            <state line="1" column="12" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Population.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Population.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/script/model/Population.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="0" selection-start="1051" selection-end="1051" vertical-scroll-proportion="0.0" vertical-offset="343" max-vertical-offset="1122">
+            <state line="69" column="115" selection-start="1983" selection-end="1983" vertical-scroll-proportion="0.7766367" vertical-offset="568" max-vertical-offset="1513">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Statistic.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/script/model/Statistic.js">
+      <file leaf-file-name="View.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/script/model/View.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2159">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Util.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/script/model/Util.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="354" selection-end="354" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="saveimage.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/saveimage.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="28" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="340">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Color.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/script/model/Color.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
+            <state line="48" column="45" selection-start="1322" selection-end="1322" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="2057">
               <folding />
             </state>
           </provider>
@@ -139,20 +116,20 @@
         <option value="$PROJECT_DIR$/script/model/Route.js" />
         <option value="$PROJECT_DIR$/script/model/Vehicle.js" />
         <option value="$PROJECT_DIR$/script/model/Cromossomo.js" />
-        <option value="$PROJECT_DIR$/script/model/Gene.js" />
         <option value="$PROJECT_DIR$/examples/index.html" />
         <option value="$PROJECT_DIR$/script/main.js" />
         <option value="$PROJECT_DIR$/script/model/Color.js" />
-        <option value="$PROJECT_DIR$/script/model/Clock.js" />
         <option value="$PROJECT_DIR$/style/stylepage.css" />
         <option value="$PROJECT_DIR$/saveimage.php" />
-        <option value="$PROJECT_DIR$/script/model/Population.js" />
-        <option value="$PROJECT_DIR$/script/Main.js" />
-        <option value="$PROJECT_DIR$/script/model/Chromosomu.js" />
-        <option value="$PROJECT_DIR$/script/model/View.js" />
         <option value="$PROJECT_DIR$/script/model/util.js" />
         <option value="$PROJECT_DIR$/script/model/Statistic.js" />
+        <option value="$PROJECT_DIR$/script/model/Gene.js" />
+        <option value="$PROJECT_DIR$/script/model/Clock.js" />
+        <option value="$PROJECT_DIR$/script/Main.js" />
+        <option value="$PROJECT_DIR$/script/model/View.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/script/model/Chromosomu.js" />
+        <option value="$PROJECT_DIR$/script/model/Population.js" />
       </list>
     </option>
   </component>
@@ -204,7 +181,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Evolution-Image-with-Algorithm-Genetic_V1" />
+              <option name="myItemId" value="Evolution-Image-with-Algorithm-Genetic" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -214,7 +191,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Evolution-Image-with-Algorithm-Genetic_V1" />
+              <option name="myItemId" value="Evolution-Image-with-Algorithm-Genetic" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -228,7 +205,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Evolution-Image-with-Algorithm-Genetic_V1" />
+              <option name="myItemId" value="Evolution-Image-with-Algorithm-Genetic" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -291,7 +268,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="70" y="-8" width="1538" height="912" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -306,11 +283,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.510559" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.510559" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -370,7 +347,9 @@
     <entry file="file://$PROJECT_DIR$/script/model/Gene.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="204">
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -391,7 +370,9 @@
     <entry file="file://$PROJECT_DIR$/script/model/Gene.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="27" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="3111">
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -601,13 +582,6 @@
         <state line="1282" column="35" selection-start="22557" selection-end="22557" vertical-scroll-proportion="0.33247754" vertical-offset="21535" max-vertical-offset="37060" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style/stylepage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="221" column="16" selection-start="3813" selection-end="3813" vertical-scroll-proportion="0.0" vertical-offset="3471" max-vertical-offset="4250">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/saveimage.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="28" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="340">
@@ -615,58 +589,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script/Main.js">
+    <entry file="file://$PROJECT_DIR$/script/model/Color.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="52" selection-start="1580" selection-end="1580" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="2108">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/model/Chromosomu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="17" selection-start="942" selection-end="942" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1190">
+        <state line="7" column="0" selection-start="93" selection-end="93" vertical-scroll-proportion="0.15275995" vertical-offset="0" max-vertical-offset="779">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/script/model/Util.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="354" selection-end="354" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/model/View.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.0" vertical-offset="156" max-vertical-offset="935">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/model/Clock.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="23" selection-start="834" selection-end="834" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/model/Color.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
+        <state line="17" column="0" selection-start="354" selection-end="354" vertical-scroll-proportion="0.37098846" vertical-offset="0" max-vertical-offset="779">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/script/model/Gene.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="282" selection-end="282" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-          <folding />
+        <state line="1" column="11" selection-start="18" selection-end="18" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script/model/Population.js">
+    <entry file="file://$PROJECT_DIR$/style/stylepage.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="0" selection-start="1051" selection-end="1051" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1122">
+        <state line="221" column="16" selection-start="3813" selection-end="3813" vertical-scroll-proportion="0.36713734" vertical-offset="3471" max-vertical-offset="4250">
           <folding />
         </state>
       </provider>
@@ -678,9 +626,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/script/model/View.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="45" selection-start="1322" selection-end="1322" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="2057">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/model/Clock.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="12" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/Main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="69" selection-start="1766" selection-end="1766" vertical-scroll-proportion="0.0" vertical-offset="666" max-vertical-offset="2193">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="0" selection-start="3496" selection-end="3496" vertical-scroll-proportion="0.5936255" vertical-offset="1321" max-vertical-offset="2074">
+        <state line="70" column="10" selection-start="2422" selection-end="2422" vertical-scroll-proportion="-4.769231" vertical-offset="1066" max-vertical-offset="1989">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/model/Chromosomu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="14" selection-start="2163" selection-end="2163" vertical-scroll-proportion="18.653847" vertical-offset="1930" max-vertical-offset="3009">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/model/Population.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="115" selection-start="1983" selection-end="1983" vertical-scroll-proportion="0.7766367" vertical-offset="568" max-vertical-offset="1513">
           <folding />
         </state>
       </provider>

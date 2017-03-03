@@ -7,14 +7,36 @@ function Population(sizepopulation, imageTarget) {
     this.fitness = Infinity;
 
     //to complete population desired
-    //while(this.members.length < sizepopulation){
+    while(this.members.length < sizepopulation){
+        //number of genes
+        chromosomu = new Chromosomu();
+        //number of genes
+        genesNumber = parseInt(Math.random()*MAXCIRCLE) + 1;
 
-        //chromosomu = new Chromosomu();
-        //random number of gene
-        //loop building genes and input in chromosomu
-        //calculate fit
-        //this.members.push(chromosomu);
-    //}
+        //for number genes time
+        for(var i=0; i < genesNumber; i++){
+            var xrandom = parseInt(Math.random()*200);
+            var yrandom = parseInt(Math.random()*250);
+            var radiusrandom = parseInt(Math.random()*MAXRADIUS);
+            var colorrandom = null;
+            if(COLORMODE=="gray"){
+                colorrandom = Util.getRandomColorGrayScale();
+            }else{
+                colorrandom = Util.getRandomColor();
+            }
+
+            //temp gene
+            var tempGene = new Gene(xrandom, yrandom, radiusrandom, colorrandom);
+            //add gene in chromosomu
+            chromosomu.addGene(tempGene);
+        }
+
+        //calculate fitness
+        chromosomu.calcFitness(imageTarget);
+        //add chromosomu in population
+        this.members.push(chromosomu);
+    }
+
 };
 
 Population.prototype.sort = function() {
@@ -28,31 +50,32 @@ Population.prototype.sort = function() {
 
 Population.prototype.generation = function(numGeneration){
 
-    $("#numgen2").text("Evolution Image | G: "+(this.generationNumber+1));
 
-    //selection
-    //cross
-    //mutetation
 
-    //draw best chromossomu
+    var newMember = new Chromosomu(this.members[0].copyGenes());
+    newMember.mutate();
+    newMember.calcFitness(this.imageTarget);
+
+    if(newMember.fitness < this.members[0].fitness){
+
+        //save image in local [ ]
+
+        this.members[0] = newMember;
+    }
+
+    $("#sub-view2").text("Fitness: "+this.members[0].fitness);
+
+    view.drawChromossomu(this.members[0]);
+
+    $("#numgen2").text("Evolution Image | G: "+(this.generationNumber+1)+" - Circle: "+this.members[0].genes.length);
+
+
     this.generationNumber++;
 
     if(!stopNow)
-      setTimeout(function(){ this.generation(numGeneration)}.bind(this), 100);
+      setTimeout(function(){ this.generation(numGeneration)}.bind(this), 10);
 
 };
-
-
-
-Population.prototype.mutate = function(type, chromo){
-
-        for(var i=0; i<chromo.length; i++){
-
-            chromo[i].mutate(type);
-
-        }
-
-}
 
 
 
