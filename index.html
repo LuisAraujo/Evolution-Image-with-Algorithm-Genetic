@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- meta data -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Aplication VRP with genetic algorithm">
+    <meta name="keywords" content="genetic algorithm, js, uefs">
+    <meta name="author" content="Luis Araujo">
+    <title>Evolution Image</title>
+
+    <!-- css style -->
+    <link rel="stylesheet" type="text/css" href="style/stylepage.css">
+    <!-- jquery -->
+    <script src="script/libs/jquery.js"></script>
+    <script src="script/libs/seedrandom.min.js"></script>
+
+    <!--class GA-->
+    <script src="script/model/Chromosomu.js"></script>
+    <script src="script/model/Population.js"></script>
+
+
+    <!--class -->
+    <!-- scripts -->
+    <script src="script/model/Util.js"></script>
+    <script src="script/model/Color.js"></script>
+    <script src="script/model/View.js"></script>
+    <script src="script/model/Clock.js"></script>
+    <script src="script/model/Statistic.js"></script>
+    <script src="script/model/Gene.js"></script>
+
+    <script src="script/Main.js"></script>
+
+    <!--
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script>
+    google.charts.load('current', {'packages':['line']});
+    </script> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">-->
+</head>
+<body>
+<div id="title">
+    Evoluation of Image
+    <img id="bt-play" src="images/btplay.png">
+    <img id="bt-pause" src="images/btpause.png">
+    <div id="current_temp" style="font-size: 10px">00:00:00</div>
+</div>
+
+<div id="div-menu-left">
+    <div class="no-line">Test Name</div>
+    <input id="text-testname" type="text" placeholder="Teste X">
+
+
+    <div class="no-line">Image Target</div>
+    <div  id="bt-file-data" class="bt-menu-left">Select Image</div>
+
+    <input  id="file-data" type="file" accept="image/*" hidden>
+
+    <div class="no-line">Radius Max Limit</div>
+    <input id="text-radius-limite" type="text" placeholder="10">
+
+    <div class="no-line">Max Number of Circle <span style="font-size: 12px">[Initial]</span></div>
+    <input id="text-number-circle" type="text" placeholder="100">
+
+    <div class="no-line">Selection Mode</div>
+
+    <div class="select-style">
+        <select id="select-typecolor">
+            <option value="0">Color</option>
+            <option value="1" selected>GrayScale</option>
+        </select>
+    </div>
+
+
+
+</div>
+
+<div style="width: 510px; height: 400px;  float: left; display: block; margin-left:  calc(35% - 260px)">
+
+<div id="div-canvas" style="display: block; width: 250px; margin-top: 100px">
+    <!-- canvas main -->
+    <div id="title-view" style="color: #eeeeee; margin-top: 50px; text-align: center">
+        <span id="numgen">Original Image</span>
+    </div>
+    <canvas id="view" width="200" height="250"></canvas>
+</div>
+
+
+<div id="div-canvas2" style="display: block; width: 250px; margin-top: 100px">
+    <!-- canvas main -->
+    <div id="title-view2" style="color: #eeeeee; margin-top: 50px; text-align: center">
+        <span id="numgen2">Evolution Image</span>
+    </div>
+    <canvas id="view2" width="200" height="250"></canvas>
+    <div id="sub-view2" style="color: #eeeeee; text-align: center; font-size: 10px"></div>
+</div>
+
+
+<canvas id="view3" width="200" height="250" style="background-color: #000; display:none;  border: 1px solid #fff; margin-top: 200px"></canvas>
+<!-- this script run when page is loading -->
+<script>
+
+//blue
+image = new Image();
+image.crossOrigin = 'anonymous';
+image.src =  "images/monalisa_color.png";
+
+</script>
+
+<script type="text/javascript">
+
+
+</script>
+
+
+</body>
+</html>
