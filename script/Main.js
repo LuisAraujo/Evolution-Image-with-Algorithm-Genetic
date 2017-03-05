@@ -43,6 +43,14 @@ $(window).on("load",function(){
         COLORMODE =  $("#select-typecolor option:selected").val();
         LOCALFOLDER = $("#text-testname").val();
         BACKGROUNDCOLOR = $("#select-backgroundcolor option:selected").val();
+        BACKGROUNDCOLOR2 = $("#text-specific-color").val();
+        //if user set specific color
+        if(BACKGROUNDCOLOR2 != ""){
+           if(/^#[0-9A-F]{6}$/i.test(BACKGROUNDCOLOR2)){
+               BACKGROUNDCOLOR = BACKGROUNDCOLOR2;
+           }
+        }
+
 
         //if don't choose image
         if(fileTarget == null){
