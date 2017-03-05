@@ -42,6 +42,7 @@
     Evoluation of Image
     <img id="bt-play" src="images/btplay.png">
     <img id="bt-pause" src="images/btpause.png">
+    <img id="bt-print" src="images/printicon.png">
     <div id="current_temp" style="font-size: 10px">00:00:00</div>
 </div>
 
@@ -56,10 +57,10 @@
     <input  id="file-data" type="file" accept="image/*" hidden>
 
     <div class="no-line">Radius Max Limit</div>
-    <input id="text-radius-limite" value="10" type="text" placeholder="10">
+    <input id="text-radius-limite"  type="text" placeholder="10">
 
     <div class="no-line">Max Number of Circle <span style="font-size: 12px">[Initial]</span></div>
-    <input id="text-number-circle" value="100" type="text" placeholder="100">
+    <input id="text-number-circle"  type="text" placeholder="100">
 
     <div class="no-line">Selection Mode</div>
 
@@ -69,11 +70,19 @@
             <option value="gray" selected>GrayScale</option>
         </select>
     </div>
+
+    <div class="no-line">Selection Background</div>
+    <div class="select-style">
+        <select id="select-backgroundcolor">
+            <option value="black">Black</option>
+            <option value="white" selected>White</option>
+        </select>
+    </div>
 </div>
 
-<div style="width: 510px; height: 400px;  float: left; display: block; margin-left:  calc(35% - 260px)">
+<div style="width: 610px; height: 400px;  float: left; display: block; margin-left:  calc(35% - 260px)">
 
-<div id="div-canvas" style="display: block; width: 250px; margin-top: 100px">
+<div id="div-canvas" style="display: block; width: 300px; margin-top: 100px">
     <!-- canvas main -->
     <div id="title-view" style="color: #eeeeee; margin-top: 50px; text-align: center">
         <span id="numgen">Original Image</span>
@@ -82,7 +91,7 @@
 </div>
 
 
-<div id="div-canvas2" style="display: block; width: 250px; margin-top: 100px">
+<div id="div-canvas2" style="display: block; width: 300px; margin-top: 100px">
     <!-- canvas main -->
     <div id="title-view2" style="color: #eeeeee; margin-top: 50px; text-align: center">
         <span id="numgen2">Evolution Image</span>

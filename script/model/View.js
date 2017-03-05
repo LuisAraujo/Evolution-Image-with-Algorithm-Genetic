@@ -13,17 +13,7 @@ function View(canvas, ctx){
     this.theLastPrint = 0;
 }
 
-
-
-/**
- Draw locals and trucks
- @param {array} arrRoute - Is a array of type Gene
- */
-/**
- Draw locals and trucks
- @param {array} arrRoute - Is a array of type Gene
- */
-
+//draw chromossomu in canvas best fit
 View.prototype.drawChromossomu = function(chromo){
 
     this.cleanCanvas();
@@ -37,7 +27,7 @@ View.prototype.drawChromossomu = function(chromo){
 }
 
 
-
+//draw chromossomu in canvas temp
 View.prototype.drawChromossomuTemp = function(chromo){
 
     this.cleanCanvasTemp();
@@ -52,7 +42,7 @@ View.prototype.drawChromossomuTemp = function(chromo){
 
 }
 
-
+//not used
 View.prototype.getDataByCanvas = function(ctx) {
 
     // Get the CanvasPixelArray from the given coordinates and dimensions.
@@ -72,7 +62,7 @@ View.prototype.getDataByCanvas = function(ctx) {
 
 }
 
-
+//cont context of canvas temp
 View.prototype.getContextTemp = function(){
     return this.ctxTemp;
 }
@@ -94,20 +84,28 @@ View.prototype.saveCanvas = function(){
 
 };
 
+//set the last image salved
+View.prototype.setLastPrint = function(fitness){
+    this.theLastPrint = fitness;
+}
+
+//get the last image salved
+View.prototype.getLastPrint = function(){
+    return this.theLastPrint;
+}
+
 
 /**
  Clean canvas
  */
 View.prototype.cleanCanvas = function() {
-    //this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-    this.ctx.fillStyle = "white";
+    this.ctx.fillStyle = BACKGROUNDCOLOR;
     this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
 }
 
 
 View.prototype.cleanCanvasTemp = function() {
-    //this.ctxTemp.clearRect(0, 0, this.canvasTemp.width, this.canvasTemp.height);
-    this.ctxTemp.fillStyle = "white";
+    this.ctx.fillStyle = BACKGROUNDCOLOR;
     this.ctxTemp.fillRect(0, 0, this.canvasTemp.width, this.canvasTemp.height);
 
 }

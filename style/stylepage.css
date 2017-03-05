@@ -110,6 +110,7 @@ html, body{
 
 }
 
+
 #bt-play:hover{
     cursor: pointer;
 }
@@ -124,7 +125,17 @@ html, body{
     display: none;
 }
 
+#bt-print{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    height: 25px;
+    width: 25px;
+}
 
+#bt-print:hover{
+    cursor: pointer;
+}
 #div-menu-left{
     padding-top: 70px;
     display: block;
