@@ -47,3 +47,8 @@ Clock.prototype.start = function () {
 Clock.prototype.stop = function () {
     window.clearInterval(this.targetFunction);
 }
+
+
+Clock.prototype.getTime = function(){
+    return this.hours+"_"+this.minutes+" "+this.secunds;
+}

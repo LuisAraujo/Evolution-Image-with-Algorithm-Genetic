@@ -5,6 +5,7 @@ window.MAXRADIUS = 0;
 window.MAXCIRCLE = 0;
 window.COLORMODE = 0;
 window.LOCALFOLDER = "";
+window.CROSSOVER = "";
 window.stopNow = false;
 //type array
 window.imageTarget = null;
@@ -18,8 +19,7 @@ window.BACKGROUNDCOLOR = "";
 
 $(window).on("load",function(){
     //set seed #01
-//    Math.seedrandom('AAaBbCc');
-
+     Math.seedrandom('AAaBbCc');
      //get canvas of html
      var canvas = document.getElementById("view");
      //get context 2d of canvas
@@ -44,6 +44,8 @@ $(window).on("load",function(){
         LOCALFOLDER = $("#text-testname").val();
         BACKGROUNDCOLOR = $("#select-backgroundcolor option:selected").val();
         BACKGROUNDCOLOR2 = $("#text-specific-color").val();
+        CROSSOVER = $("#select-crossover option:selected").val();
+
         //if user set specific color
         if(BACKGROUNDCOLOR2 != ""){
            if(/^#[0-9A-F]{6}$/i.test(BACKGROUNDCOLOR2)){
@@ -89,12 +91,13 @@ $(window).on("load",function(){
             clock.start();
             //hide this button and show pause button
             $(this).hide();
+            //show button pause
             $("#bt-pause").css("display","inline");
 
             //get data of image
             window.imageTarget = ctx.getImageData(0, 0, 200, 250).data;
             //p is global
-            p = new Population(1, imageTarget);
+            p = new Population(4, imageTarget);
             //call generations process
             p.generation();
 
@@ -106,15 +109,22 @@ $(window).on("load",function(){
         }
     });
 
+
+    //click pause
     $("#bt-pause").click( function(){
+        //stop flat true
         stopNow = true;
+        //hide button stop
         $(this).hide();
+        //show button play
         $("#bt-play").css("display","inline");
+        //stop time
         clock.stop();
     });
 
     $("#bt-print").click(function(){
-        view.saveCanvas();
+        //save canvas current
+        view.saveCanvas(p.members[0].fitness, clock.getTime());
     });
 
     //trigger file with button
@@ -126,6 +136,7 @@ $(window).on("load",function(){
     document.getElementById('file-data').onchange = function(e) {
         window.fileTarget = new Image();
         window.fileTarget.crossOrigin = 'anonymous';
+        //get url image
         fileTarget.src =  URL.createObjectURL(e.target.files[0]);
 
     };

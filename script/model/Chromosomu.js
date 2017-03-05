@@ -1,6 +1,6 @@
 //cromossomo
 function Chromosomu(genes){
-    this.fitness;
+    this.fitness = Infinity;
     //array of Genes
     this.genes = [];
 
@@ -137,12 +137,68 @@ Chromosomu.prototype.removeGene = function(index){
 
 
 /* not using */
-Chromosomu.prototype.crossover = function(anotherCromo){
+Chromosomu.prototype.crossover = function(anotherCromo, type){
 
-
+    if(type == "halfimage_v"){
+        //half image vertical
+       return this.crossoverHalfImageV(anotherCromo);
+    }else if(type == "halfimage_h"){
+        //half image horizontal
+        return this.crossoverHalfImageH(anotherCromo);
+    }else if(type == "onefourthimage"){
+        //one fourth image
+        return this.crossoverOneFourthImage(anotherCromo);
+    }
 };
 
-Chromosomu.prototype.copyGenes = function(part){
+
+
+Chromosomu.prototype.crossoverHalfImageV = function(anotherCromo){
+
+    var child1 = new Chromosomu();
+    var child2 = new Chromosomu();
+
+    this.genes.forEach(function(item){
+
+        if(item.y < 125){
+            child1.addGene(item.copy());
+        }else{
+            child2.addGene(item.copy());
+        }
+    });
+
+
+    anotherCromo.genes.forEach(function(item){
+
+        if(item.y < 125){
+            child2.addGene(item.copy());
+        }else{
+            child1.addGene(item.copy());
+        }
+    });
+
+
+    return [child1, child2];
+
+}
+
+
+
+//not implemented yet
+Chromosomu.prototype.crossoverOneFourthImage = function(anotherCromo){
+
+}
+
+
+
+//not implemented yet
+Chromosomu.prototype.crossoverHalfImageH = function(anotherCromo){
+
+}
+
+
+
+Chromosomu.prototype.copyGenes = function(){
 
     var newGenes = [];
 
@@ -182,5 +238,12 @@ Chromosomu.prototype.calcFitness = function(imageTarget){
 };
 
 
+
+Chromosomu.prototype.copy = function(){
+    var c = new Chromosomu( this.copyGenes() );
+    c.fitness = this.fitness;
+
+    return c;
+}
 
 

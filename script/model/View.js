@@ -68,7 +68,7 @@ View.prototype.getContextTemp = function(){
     return this.ctxTemp;
 }
 
-View.prototype.saveCanvas = function(){
+View.prototype.saveCanvas = function(fitness, time){
     var dataURL =view.canvas.toDataURL("image/png");
 
     $.ajax({
@@ -76,7 +76,7 @@ View.prototype.saveCanvas = function(){
         url: "saveimage.php",
         data: {
             imgBase64: dataURL,
-            id: "print_"+ p.generationNumber,
+            id: "print_g_"+ p.generationNumber +"_f_"+fitness+"_t_"+time,
             local: LOCALFOLDER
         }
     }).done(function(o) {
