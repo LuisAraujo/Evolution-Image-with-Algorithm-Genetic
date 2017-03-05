@@ -13,7 +13,7 @@ function Chromosomu(genes){
 Chromosomu.prototype.mutate = function(){
 
     //amount of genes could can mutate - 1 to 20% of genes
-    var countGene = nextInt( parseInt(this.genes.length*0.2) )+1;
+    var countGene = nextInt(parseInt(this.genes.length*0.2) )+1;
 
     //loop for change gene
    while(countGene > 0){

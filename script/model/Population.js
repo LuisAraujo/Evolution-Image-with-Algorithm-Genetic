@@ -71,7 +71,6 @@ Population.prototype.generation = function(numGeneration){
 
     $("#numgen2").text("Evolution Image | G: "+(this.generationNumber+1));
 
-
     this.generationNumber++;
 
     if(!stopNow)

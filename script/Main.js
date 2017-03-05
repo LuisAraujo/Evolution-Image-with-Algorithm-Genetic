@@ -18,7 +18,7 @@ window.BACKGROUNDCOLOR = "";
 
 $(window).on("load",function(){
     //set seed #01
-    Math.seedrandom('AAaBbCc');
+//    Math.seedrandom('AAaBbCc');
 
      //get canvas of html
      var canvas = document.getElementById("view");
@@ -42,9 +42,7 @@ $(window).on("load",function(){
         MAXCIRCLE = parseInt( $("#text-number-circle").val() );
         COLORMODE =  $("#select-typecolor option:selected").val();
         LOCALFOLDER = $("#text-testname").val();
-        BACKGROUNDCOLOR = $("#select-backgroundcolor").val();
-
-
+        BACKGROUNDCOLOR = $("#select-backgroundcolor option:selected").val();
 
         //if don't choose image
         if(fileTarget == null){
@@ -93,6 +91,8 @@ $(window).on("load",function(){
             p.generation();
 
         }else{
+            //falg stop is false
+            stopNow = false;
             //continue generation
             p.generation();
         }
