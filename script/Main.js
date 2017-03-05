@@ -50,9 +50,11 @@ $(window).on("load",function(){
         if(BACKGROUNDCOLOR2 != ""){
            if(/^#[0-9A-F]{6}$/i.test(BACKGROUNDCOLOR2)){
                BACKGROUNDCOLOR = BACKGROUNDCOLOR2;
+           }else{
+               alert("Color hex not is correct!");
+               return;
            }
         }
-
 
         //if don't choose image
         if(fileTarget == null){
@@ -65,7 +67,6 @@ $(window).on("load",function(){
             alert("Define a local for save images");
             return;
         }
-
 
         //value default
         if(isNaN(MAXRADIUS))
@@ -85,14 +86,6 @@ $(window).on("load",function(){
                 alert("You do not change image target after process started!");
             });
 
-            //falg stop is false
-            stopNow = false;
-            //call funtion count time
-            clock.start();
-            //hide this button and show pause button
-            $(this).hide();
-            //show button pause
-            $("#bt-pause").css("display","inline");
 
             //get data of image
             window.imageTarget = ctx.getImageData(0, 0, 200, 250).data;
@@ -107,6 +100,17 @@ $(window).on("load",function(){
             //continue generation
             p.generation();
         }
+
+
+        //falg stop is false
+        stopNow = false;
+        //call funtion count time
+        clock.start();
+        //hide this button and show pause button
+        $(this).hide();
+        //show button pause
+        $("#bt-pause").css("display","inline");
+
     });
 
 
