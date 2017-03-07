@@ -86,12 +86,13 @@ Population.prototype.generation = function(numGeneration){
 
     if(oldBest.fitness > this.members[0].fitness){
 
-        if ( (oldBest.fitness - Math.abs(view.getLastPrint()) > 2000000) && (this.generationNumber!= 0)){
+        //if ( clock.getMinutes()%5 == 0 ){
+        if ( ( Math.abs(view.getLastPrint() - this.members[0].fitness ) > 1000000) && (this.generationNumber!= 0)){
             view.saveCanvas(this.members[0].fitness,  clock.getTime() );
             view.setLastPrint(this.members[0].fitness);
         }
 
-        //this.members[0] =  oldBest;
+        oldBest = this.members[0];
     }
 
 
@@ -105,7 +106,7 @@ Population.prototype.generation = function(numGeneration){
 
     //if(this.generationNumber < 4)
     if(!stopNow)
-      setTimeout(function(){ this.generation(numGeneration)}.bind(this), 100);
+      setTimeout(function(){ this.generation(numGeneration)}.bind(this), 10);
 
 };
 

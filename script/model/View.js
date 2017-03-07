@@ -20,7 +20,7 @@ View.prototype.drawChromossomu = function(chromo){
 
     for(var i = 0; i < chromo.genes.length; i++){
         this.ctx.beginPath();
-        this.ctx.globalAlpha = chromo.genes[i].a;
+        this.ctx.globalAlpha = chromo.genes[i].color.a;
         this.ctx.arc(chromo.genes[i].x, chromo.genes[i].y, chromo.genes[i].radius, 0, 2 * Math.PI, false);
         this.ctx.fillStyle = chromo.genes[i].color;
         this.ctx.fill();
@@ -35,7 +35,7 @@ View.prototype.drawChromossomuTemp = function(chromo){
 
     for(var i = 0; i < chromo.genes.length; i++){
         this.ctxTemp.beginPath();
-        this.ctxTemp.globalAlpha = chromo.genes[i].a;
+        this.ctxTemp.globalAlpha = chromo.genes[i].color.a;
         this.ctxTemp.arc(chromo.genes[i].x, chromo.genes[i].y, chromo.genes[i].radius, 0, 2 * Math.PI, false);
         this.ctxTemp.fillStyle = chromo.genes[i].color;
         this.ctxTemp.fill();

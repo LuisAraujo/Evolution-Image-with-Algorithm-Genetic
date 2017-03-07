@@ -91,18 +91,63 @@ Chromosomu.prototype.crossoverHalfImageV = function(anotherCromo){
 
 
 
-//not implemented yet
 Chromosomu.prototype.crossoverOneFourthImage = function(anotherCromo){
 
+    var child1 = new Chromosomu();
+    var child2 = new Chromosomu();
+
+    this.genes.forEach(function(item){
+     // Filho 1 quadrante 1
+        if ( (item.x < 100 && item.y <125) || (item.x >= 100 && item.y >= 125) ){
+            child1.addGene(item.copy());
+        }else{
+            child2.addGene(item.copy());
+        }
+    });
+
+    anotherCromo.genes.forEach(function(item){
+
+        if ( (item.x < 100 && item.y <125) ||  (item.x >= 100 && item.y >= 125) ){
+            child2.addGene(item.copy());
+        }
+        else{
+            child1.addGene(item.copy());
+        }
+    });
+
+    return [child1, child2];
+
 }
 
 
 
-//not implemented yet
 Chromosomu.prototype.crossoverHalfImageH = function(anotherCromo){
 
-}
+    var child1 = new Chromosomu();
+    var child2 = new Chromosomu();
 
+    this.genes.forEach(function(item){
+
+        if(item.x < 100){
+            child1.addGene(item.copy());
+        }else{
+            child2.addGene(item.copy());
+        }
+    });
+
+
+    anotherCromo.genes.forEach(function(item){
+
+        if(item.x < 100){
+            child2.addGene(item.copy());
+        }else{
+            child1.addGene(item.copy());
+        }
+    });
+
+    return [child1, child2];
+
+}
 
 
 Chromosomu.prototype.copyGenes = function(){

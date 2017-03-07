@@ -52,3 +52,7 @@ Clock.prototype.stop = function () {
 Clock.prototype.getTime = function(){
     return this.hours+"_"+this.minutes+" "+this.secunds;
 }
+
+Clock.prototype.getMinutes = function(){
+    return this.minutes;
+}
