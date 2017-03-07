@@ -36,7 +36,7 @@ Gene.prototype.mutate = function(chromo){
 
             var col = new Color(valueScale, valueScale, valueScale, aTemp);
 
-            //color mode
+        //color mode
         }else{
             var rTemp = this.color.r;
             var gTemp = this.color.g;
@@ -62,7 +62,7 @@ Gene.prototype.mutate = function(chromo){
 
         this.color = col;
 
-        //30%
+     //30%
     }else if(randomFactor < 0.7){
 
         //5% move x and y
@@ -103,9 +103,7 @@ Gene.prototype.mutate = function(chromo){
 
         //15% add gene
     }else{
-
         chromo.removeGene( nextInt( chromo.genes.length) );
-
     }
 
 }

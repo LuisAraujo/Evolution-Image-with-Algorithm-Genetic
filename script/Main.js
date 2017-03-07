@@ -16,6 +16,7 @@ window.clock = null;
 //type image (HTML)
 window.fileTarget = null;
 window.BACKGROUNDCOLOR = "";
+window.populationnumber = 0;
 
 $(window).on("load",function(){
     //set seed #01
@@ -45,7 +46,8 @@ $(window).on("load",function(){
         BACKGROUNDCOLOR = $("#select-backgroundcolor option:selected").val();
         BACKGROUNDCOLOR2 = $("#text-specific-color").val();
         CROSSOVER = $("#select-crossover option:selected").val();
-
+        populationnumber  = parseInt( $("#text-population-number").val() );
+        console.log(populationnumber)
         //if user set specific color
         if(BACKGROUNDCOLOR2 != ""){
            if(/^#[0-9A-F]{6}$/i.test(BACKGROUNDCOLOR2)){
@@ -90,7 +92,7 @@ $(window).on("load",function(){
             //get data of image
             window.imageTarget = ctx.getImageData(0, 0, 200, 250).data;
             //p is global
-            p = new Population(4, imageTarget);
+            p = new Population(populationnumber, imageTarget);
             //call generations process
             p.generation();
 

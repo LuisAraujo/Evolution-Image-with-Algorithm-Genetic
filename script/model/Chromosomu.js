@@ -12,8 +12,8 @@ function Chromosomu(genes){
 
 Chromosomu.prototype.mutate = function(){
 
-    //amount of genes could can mutate - 1 to 20% of genes
-    var countGene = nextInt(parseInt(this.genes.length*0.2) )+1;
+    //amount of genes could can mutate  20% of genes
+    var countGene = parseInt(this.genes.length*0.2);
 
     //loop for change gene
    while(countGene > 0){
@@ -88,7 +88,6 @@ Chromosomu.prototype.crossoverHalfImageV = function(anotherCromo){
     return [child1, child2];
 
 }
-
 
 
 Chromosomu.prototype.crossoverOneFourthImage = function(anotherCromo){
@@ -186,6 +185,8 @@ Chromosomu.prototype.calcFitness = function(imageTarget){
         this.fitness += Math.abs(rDelta) +  Math.abs(gDelta) + Math.abs(bDelta)
 
     }
+
+    //this.fitness += this.genes.length * 5;
 
 };
 

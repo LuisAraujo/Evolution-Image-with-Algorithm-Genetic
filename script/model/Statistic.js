@@ -32,12 +32,6 @@ Statistic.prototype.getTheFitnessByGeneration = function(callback){
     bestFitness = [];
 
     for(var i=0; i<this.generation.length; i++){
-    /*    this.generation[i].sort(function(a, b){
-            return a.fitness - b.fitness;
-        });
-
-        this.generation[i].sort();*/
-
         var tempFitness = this.generation[i][0].fitness;
         console.log(tempFitness);
         bestFitness.push(tempFitness);
