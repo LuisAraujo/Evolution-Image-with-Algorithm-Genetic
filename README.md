@@ -14,7 +14,7 @@ This project is based on [Alteredqualia's project](http://alteredqualia.com/visu
 
 **MUTATE:**
 
-1. In each step we randomly modify one or more parameters of circle (like color, position or radius), addfy or removefy a circle;
+1. In each step we randomly modify one or more parameters of circle (like color, position or radius), adding or removing a circle;
 2. The number of genes can be change is a random number (1 to 20% of genes length).
 
 **CANVAS:**
